@@ -1,17 +1,17 @@
 all: build run clean
 
 build:
-	@gotip build -o generic-example cmd/generic-example/main.go
+	@go build -o generic-example cmd/generic-example/main.go
 run:
 	@./generic-example
 clean:
 	@rm generic-example
 
 tidy:
-	gotip mod tidy
+	go mod tidy
 
 .PHONY: vendor
 vendor:
-	gotip mod vendor
+	go mod vendor
 clean-vendor:
 	rm -rf vendor
