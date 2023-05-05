@@ -9,3 +9,8 @@ vendor/
 
 # Local History for Visual Studio Code
 .history/
+.idea/.gitignore
+.idea/go-generic-example.iml
+.idea/modules.xml
+.idea/vcs.xml
+.vscode/settings.json
